@@ -1,5 +1,5 @@
 # Rs-Snappy
-_Cross platform build system to create snappy packages on other distros and possibly other OS' for the Ubuntu Snappy-Core platform with Docker_
+_Cross distro build system to create snappy packages on other distros and possibly other OS' for the Ubuntu Snappy-Core platform with Docker_
 
 I was originally going to build this in Golang, but decided this was a good project to learn and dive into Rust.
 
