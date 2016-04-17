@@ -9,12 +9,13 @@ fn help() {
 
 ///run_cmd: Is a Command wrapper to run any needed cmd and output to stdio/stderr
 fn run_cmd(cmd: &str, argsv: Vec<&str>) {
-    let mut output = Command::new(cmd)
-                         .args(&argsv)
-                         .stdout(Stdio::inherit())
-                         .stderr(Stdio::inherit())
-                         .spawn()
-                         .unwrap();
+    // let mut output = Command::new(cmd)
+    Command::new(cmd)
+        .args(&argsv)
+        .stdout(Stdio::inherit())
+        .stderr(Stdio::inherit())
+        .spawn()
+        .unwrap();
 
     // let status = output.wait();
     // println!("{:?}", status);
